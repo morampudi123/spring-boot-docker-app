@@ -1,0 +1,7 @@
+---
+- hosts: windows server
+  tasks:
+    - name: Copy the tar file into Windows server
+      copy:
+        src: /var/lib/jenkins/workspace/new project/spring-boot-app.tar
+        dest: C:\testfile
